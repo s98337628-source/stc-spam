@@ -1,0 +1,58 @@
+getgenv().Config = {
+    ["Setting"] = {
+        ["Team"] = "Pirates", -- Pirates/Marines
+        ["FPS Boost"] = false,
+        ["RemoveNotification"] = false,
+        ["Time Skip Player"] = 120 -- Second
+    },
+    ["Run"] = {
+        ["RunIfLowHealth"] = true,
+        ["HealtRun"] = 30, -- %
+        ["HealthBack"] = 50, -- %
+        ["Teleport Y"] = 400
+    },
+    ["Skip"] = {
+        ["Skip V4"] = false,
+        ["Skip Fruits"] = {"Portal-Portal", "Buddha-Buddha"}
+    },
+    ["Bounty"] = {
+        ["Aimbot Camera"] = true,
+        ["ESP Player"] = true
+    },
+    ["Weapon"] = {
+        ["Melee"] = {
+            ["Use Melee"] = true,
+            ["Z"] = {Enable = true, Hold = 0.1},
+            ["X"] = {Enable = true, Hold = 0.1},
+            ["C"] = {Enable = true, Hold = 0.1}
+        },
+        ["Fruits"] = {
+            ["Use Fruits"] = true,
+            ["Z"] = {Enable = true, Hold = 0.1},
+            ["X"] = {Enable = true, Hold = 0.1},
+            ["C"] = {Enable = true, Hold = 0.1},
+            ["V"] = {Enable = false, Hold = 0.1},
+            ["F"] = {Enable = false, Hold = 0.1}
+        },
+        ["Sword"] = {
+            ["Use Sword"] = true,
+            ["Z"] = {Enable = true, Hold = 0.1},
+            ["X"] = {Enable = false, Hold = 0.1}
+        },
+        ["Gun"] = {
+            ["Use Gun"] = false,
+            ["Z"] = {Enable = false, Hold = 0.1},
+            ["X"] = {Enable = false, Hold = 0.1}
+        },
+    },
+    ["Misc"] = {
+        ["Active Race V3"] = true,
+        ["Active Race V4"] = true,
+        ["Random And Store Fruits"] = false
+    },
+    ["Webhook"] = {      
+        ["UrlWebhook"] = "",
+        ["Enable"] = false
+    }
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-BlueX/...../refs/heads/main/FarmBounty.lua"))()
